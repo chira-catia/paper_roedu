@@ -1,0 +1,16 @@
+
+Basic support for mobile nodes in NS-2 is added through the MobileNode class. This extends
+the generic Node class and adds support for mobilty to the node and the capability to
+send and receive messages on a wireless medium. 
+Following are listed some example commands to set the position and the movement of a node:
+\lstset{numbers=none,captionpos=b,frame=single,language=C,caption=Commands to set the position and movement of a node,label=lst:saddrule}
+\begin{lstlisting}
+	$node set X_ <x>
+	$node set Y_ <y>
+	$node set Z_ <z>
+	$ns at $time $node setdest <x> <y> <speed>
+\end{lstlisting}
+As it can be seen, although we can specify the position of the node in three dimensions,
+only two are used for the mobilty of nodes.
+
+
